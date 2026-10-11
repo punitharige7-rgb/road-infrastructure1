@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import './style.css';
 
-const API = 'http://localhost:8081/api/tickets';
+const API = `${import.meta.env.VITE_API_URL || 'http://localhost:8081'}/api/tickets`;
 const categories = [
   { id:'POTHOLE', title:'Potholes & damaged roads', short:'Potholes', image:'/images/pothole.jpg', icon:'⚠️', color:'coral', text:'Report potholes, cracks, broken road surfaces and dangerous depressions.' },
   { id:'DRAINAGE', title:'Drainage & waterlogging', short:'Drainage', image:'/images/drainage.jpg', icon:'🌊', color:'blue', text:'Flag blocked drains, overflowing manholes and waterlogged streets.' },
