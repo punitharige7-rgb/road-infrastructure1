@@ -1,0 +1,17 @@
+/* Add these rules to your existing style.css, or keep this as admin-features.css and import it. */
+.adminTabs{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.tab{border:1px solid #d9e2e7;background:#fff;color:#17313d;border-radius:10px;padding:11px 15px;cursor:pointer;font:inherit}
+.tab.active{background:#17313d;color:#fff;border-color:#17313d}
+.toolbarButtons{display:flex;gap:8px;flex-wrap:wrap}.smallButton{padding:10px 13px}.miniButton{padding:7px 9px;font-size:12px;white-space:nowrap}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}
+.filters input,.filters select{width:100%;min-width:0;box-sizing:border-box;padding:10px 11px;border:1px solid #d9e2e7;border-radius:9px;background:#fff;color:inherit;font:inherit}
+.overdueText{color:#b42318;font-weight:800}
+.mapGrid{display:grid;grid-template-columns:minmax(0,2fr) minmax(230px,1fr);gap:18px;margin:18px 0}.mapCanvas{min-height:300px}
+.mapPlaceholder{min-height:300px;border:1px dashed #ccd8de;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px;box-sizing:border-box;background:linear-gradient(135deg,#f4f8f9,#eaf2f3)}.mapPlaceholder>span{font-size:42px}.mapPlaceholder p{max-width:350px}
+.locationList{border:1px solid #d9e2e7;border-radius:12px;padding:14px;max-height:420px;overflow:auto}.locationItem{padding:12px 0;border-bottom:1px solid #e5ebee;display:flex;flex-direction:column;gap:5px}.locationItem:last-child{border-bottom:0}.locationItem span,.locationItem small{color:#607580}
+.analyticsGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:18px 0}.analyticsCard{padding:18px;border:1px solid #d9e2e7;border-radius:12px;display:flex;flex-direction:column;gap:8px}.analyticsCard span,.analyticsCard small{color:#607580}.analyticsCard strong{font-size:30px}
+.bar{height:7px;background:#e7eef0;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:#19856b;border-radius:99px}
+.analyticsColumns{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin:24px 0}.rankRow{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid #e5ebee}.rankRow span{overflow-wrap:anywhere}
+.modalBackdrop{position:fixed;inset:0;z-index:50;background:rgba(11,25,32,.55);display:flex;align-items:center;justify-content:center;padding:20px;overflow:auto}.photoModal{width:min(760px,100%);max-height:90vh;overflow:auto;box-sizing:border-box}
+.photoGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}.photoGrid label{display:flex;flex-direction:column;gap:10px;font-weight:600}.photoGrid input{max-width:100%;font-weight:400}.photoGrid img{width:100%;max-height:260px;object-fit:contain;background:#f2f5f6;border-radius:10px}
+@media(max-width:760px){.mapGrid,.photoGrid{grid-template-columns:1fr}.adminTabs .tab{flex:1 1 100%}.toolbarButtons{width:100%}}
