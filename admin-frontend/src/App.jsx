@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import './style.css';
 
-const API = 'http://localhost:8081/api/tickets';
+const API ='https://road-infrastructure1.onrender.com/api/tickets';
 const STATUSES = ['OPEN', 'VERIFIED', 'ASSIGNED', 'IN_PROGRESS', 'RESOLVED', 'CLOSED'];
 const PRIORITIES = ['LOW', 'MEDIUM', 'HIGH', 'URGENT'];
 const str = v => v == null ? '' : String(v);
